@@ -2,11 +2,11 @@
 
 Your need to run the command line
 
-- `java ChatServer`
+- ```java ChatServer```
 
 This starts the server listening on the port number 8989, you can see the following output in the server once it started:
 
-- `Chat Sever is listening on port 8989`
+- ```Chat Sever is listening on port 8989```
 
 The server is waiting for new clients forever so you have to Ctrl+C to terminate it.
 
@@ -14,7 +14,7 @@ The server is waiting for new clients forever so you have to Ctrl+C to terminate
 
 Your need to run the command line
 
-- `java ChatClient`
+- ```java ChatClient```
 
 The Client's console:
 
