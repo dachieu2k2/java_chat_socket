@@ -1,4 +1,5 @@
 import java.io.BufferedReader;
+import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.OutputStream;
@@ -44,8 +45,9 @@ public class UserThread extends Thread {
             serverMessage = userName + "has quitted";
             server.broadcast(serverMessage, this);
 
-        } catch (Exception e) {
-            // TODO: handle exception
+        } catch (IOException ex) {
+            System.out.println("Error in UserThread: " + ex.getMessage());
+            ex.printStackTrace();
         }
     }
 

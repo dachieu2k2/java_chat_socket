@@ -36,12 +36,17 @@ public class ChatClient {
     }
 
     public static void main(String[] args) {
-        if (args.length < 2)
-            return;
-        String hostname = args[0];
-        int port = Integer.parseInt(args[1]);
+        // when you run command "java ChatClient localhost 8989"
+        // if (args.length < 2)
+        // return;
+        // String hostname = args[0];
+        // int port = Integer.parseInt(args[1]);
 
-        ChatClient client = new ChatClient(hostname, port);
+        // ChatClient client = new ChatClient(hostname, port);
+
+        // you will start on port 8989
+        ChatClient client = new ChatClient("localhost", 8989);
+
         client.execute();
     }
 }

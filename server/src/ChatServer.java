@@ -26,17 +26,21 @@ public class ChatServer {
         } catch (IOException ex) {
             System.out.println("Error in the server: " + ex.getMessage());
             ex.printStackTrace();
-            // TODO: handle exception
         }
     }
 
     public static void main(String[] args) {
-        if (args.length < 1) {
-            System.out.println("Syntax: java ChatServer <port-number>");
-            System.exit(0);
-        }
-        int port = Integer.parseInt(args[0]);
-        ChatServer server = new ChatServer(port);
+        // when you run command java Chatserver 8989
+        // if (args.length < 1) {
+        // System.out.println("Syntax: java ChatServer <port-number>");
+        // System.exit(0);
+        // }
+        // int port = Integer.parseInt(args[0]);
+        // ChatServer server = new ChatServer(port);
+
+        // you will start port 8989
+        ChatServer server = new ChatServer(8989);
+
         server.execute();
     }
 
